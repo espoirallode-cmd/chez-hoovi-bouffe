@@ -129,7 +129,7 @@ const HeroSection = () => {
                  marginBottom: -2,
                  paddingBottom: 0,
                  position: 'relative',
-                 bottom: '5px'
+                 bottom: '-75px'
                }}
              />
           </div>
