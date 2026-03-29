@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section 
       id="accueil" 
-      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-10 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
+      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-8 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
       style={{
         background: 'linear-gradient(to right, #860207, #f60615)'
       }}
@@ -40,10 +40,10 @@ const HeroSection = () => {
           <img 
             src={oignonImg} 
             alt="Oignon décoratif" 
-            className="absolute pointer-events-none w-[80px] h-[80px] md:w-[180px] md:h-[180px] blur-[1px] md:blur-[3px] brightness(1.1)"
+            className="absolute pointer-events-none w-[70px] h-[70px] md:w-[180px] md:h-[180px] blur-[1px] md:blur-[3px] brightness(1.1)"
             style={{
-              top: '50%',
-              right: '50px',
+              top: '40%',
+              right: '-10px',
               transform: 'translateY(-50%)',
               mixBlendMode: 'multiply',
               zIndex: 5
@@ -59,18 +59,18 @@ const HeroSection = () => {
               Chez Hoovi Boof c'est le meilleur goût!
             </p>
             
-            <div className="flex flex-row items-center gap-[8px] md:gap-[24px] justify-start mt-[8px] md:mt-0">
+            <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-[8px] md:mt-0">
               <div className="flex flex-row gap-2 md:gap-4">
                 <a 
                   href="#menu" 
-                  className="text-white px-[12px] py-[8px] md:px-8 md:py-3.5 rounded-lg font-bold text-[11px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
+                  className="text-white px-[10px] py-[6px] md:px-8 md:py-3.5 rounded-lg font-bold text-[10px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
                   style={{ backgroundColor: '#249824' }}
                 >
                    Voir nos menus
                 </a>
                 <a 
                   href="#contact" 
-                  className="text-white px-[12px] py-[8px] md:px-8 md:py-3.5 rounded-lg font-bold text-[11px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
+                  className="text-white px-[10px] py-[6px] md:px-8 md:py-3.5 rounded-lg font-bold text-[10px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
                   style={{ backgroundColor: '#249824' }}
                 >
                   Service traiteur
@@ -79,17 +79,17 @@ const HeroSection = () => {
               <img 
                 src={p1Img} 
                 alt="Poulet rôti" 
-                className="block w-[70px] h-[70px] md:w-[150px] md:h-[150px] object-contain"
+                className="block w-[60px] h-[60px] md:w-[150px] md:h-[150px] object-contain"
                 style={{ mixBlendMode: 'multiply' }}
               />
             </div>
 
-            {/* Row of 5 circles */}
-            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-[10px] md:mt-[16px] flex-wrap">
+            {/* Row of 3 circles (mobile) / 5 circles (desktop) */}
+            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-[10px] md:mt-[16px] flex-wrap hero-circles">
               {dishAssets.map((asset, index) => (
                 <div 
                   key={index}
-                  className="w-[52px] h-[52px] md:w-[100px] md:h-[100px] hover:scale-110 transition-transform duration-300 rounded-full overflow-hidden flex-shrink-0 m-[3px] md:m-[6px] ring-[2px] ring-[#249824] ring-offset-[2px] ring-offset-white md:ring-[4px] md:ring-offset-[4px]"
+                  className={`w-[70px] h-[70px] md:w-[100px] md:h-[100px] hover:scale-110 transition-transform duration-300 rounded-full overflow-hidden flex-shrink-0 m-[3px] md:m-[6px] ring-[2px] ring-[#249824] ring-offset-[2px] ring-offset-white md:ring-[4px] md:ring-offset-[4px] ${index >= 3 ? "hidden md:block" : ""}`}
                 >
                   <img 
                     src={asset} 
@@ -102,20 +102,20 @@ const HeroSection = () => {
           </div>
 
           {/* Colonne droite (Image Cheffe) */}
-          <div className="w-[45%] md:w-[50%] flex justify-end items-end relative h-[300px] md:h-[650px]">
+          <div className="w-[45%] md:w-[50%] flex justify-end items-start md:items-end relative h-[300px] md:h-[650px] pt-4 md:pt-0">
              <img 
-               src={chefImg} 
-               alt="La Cheffe Hoovi" 
-               className="w-full md:w-[110%] h-auto max-h-full object-contain object-bottom align-bottom transform origin-bottom scale-[1.1]"
-               loading="eager"
-               style={{
-                 mixBlendMode: 'multiply',
-                 alignSelf: 'flex-end',
-                 marginBottom: -2,
-                 paddingBottom: 0,
-                 position: 'relative',
-                 bottom: '-75px'
-               }}
+                src={chefImg} 
+                alt="La Cheffe Hoovi" 
+                className="w-full md:w-[110%] h-auto max-h-full object-contain object-top md:object-bottom align-top md:align-bottom transform origin-top md:origin-bottom scale-[1.1] relative top-0 md:top-auto bottom-0 md:bottom-[-75px]"
+                loading="eager"
+                decoding="async"
+                style={{
+                  mixBlendMode: 'multiply',
+                  alignSelf: 'flex-start',
+                  marginTop: 0,
+                  marginBottom: -2,
+                  paddingBottom: 0,
+                }}
              />
           </div>
         </div>
