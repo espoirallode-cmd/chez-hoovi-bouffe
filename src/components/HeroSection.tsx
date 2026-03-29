@@ -91,7 +91,7 @@ const HeroSection = () => {
               {dishAssets.map((asset, index) => (
                 <div 
                   key={index}
-                  className={`w-[60px] h-[60px] md:w-[100px] md:h-[100px] hover:scale-110 transition-transform duration-300 rounded-full overflow-hidden flex-shrink-0 m-[3px] md:m-[6px] ring-[2px] ring-[#249824] ring-offset-[2px] ring-offset-white md:ring-[4px] md:ring-offset-[4px] ${index >= 3 ? "hidden md:block" : ""}`}
+                  className={`w-[45px] h-[45px] md:w-[100px] md:h-[100px] hover:scale-110 transition-transform duration-300 rounded-full overflow-hidden flex-shrink-0 m-[3px] md:m-[6px] ring-[2px] ring-[#249824] ring-offset-[2px] ring-offset-white md:ring-[4px] md:ring-offset-[4px] ${index >= 3 ? "hidden md:block" : ""}`}
                 >
                   <img 
                     src={asset} 
