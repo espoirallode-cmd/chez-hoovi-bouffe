@@ -44,7 +44,7 @@ const HeroSection = () => {
               <span className="whitespace-nowrap">de chez Hoovi Bouffe</span>
             </h1>
             <p className="font-body text-[11px] md:text-xl text-white/85 mb-0 md:mb-4 max-w-2xl mx-0 whitespace-nowrap">
-              Chez Hoovi Boof c'est le meilleur goût!
+              Chez Hoovi Bouffe c'est le meilleur goût!
             </p>
             
             <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-[-4px] md:mt-0 flex-nowrap">
