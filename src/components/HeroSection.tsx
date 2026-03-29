@@ -26,7 +26,7 @@ const HeroSection = () => {
           <img 
             src={oignonImg} 
             alt="Oignon décoratif" 
-            className="absolute pointer-events-none w-[70px] h-[70px] md:w-[180px] md:h-[180px] blur-[1px] md:blur-[3px] brightness(1.1) right-[-10px] md:right-[20%] top-[40%] transform -translate-y-1/2"
+            className="absolute pointer-events-none w-[70px] h-[70px] md:w-[180px] md:h-[180px] blur-[1px] md:blur-[3px] brightness(1.1) right-[-10px] md:right-[2%] top-[40%] transform -translate-y-1/2"
             style={{
               mixBlendMode: 'multiply',
               zIndex: 5
