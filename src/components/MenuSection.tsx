@@ -114,11 +114,11 @@ const MenuSection = () => {
                 <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold mb-2 bg-primary/10 text-primary">
                   {d.cat === "european" ? "Européen" : "Africain"}
                 </span>
-                <h3 className="font-body font-bold text-lg text-foreground">{d.name}</h3>
+                <h3 className="font-body font-bold text-[13px] md:text-lg text-foreground truncate">{d.name}</h3>
                 <p className="text-muted-foreground text-sm mt-1 line-clamp-2">{d.desc}</p>
                 
                 <div className="flex items-center justify-between mt-4">
-                  <p className="text-accent font-bold text-lg">
+                  <p className="text-accent font-bold text-[11px] md:text-lg whitespace-nowrap mr-2">
                     {typeof d.price === 'string' 
                       ? d.price 
                       : Math.round(d.price * 655).toLocaleString('fr-FR').replace(/\s/g, ' ')} FCFA
