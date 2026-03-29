@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section 
       id="accueil" 
-      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-8 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
+      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-5 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
       style={{
         background: 'linear-gradient(to right, #860207, #f60615)'
       }}
@@ -51,7 +51,7 @@ const HeroSection = () => {
           />
           
           {/* Colonne gauche (50% sur desktop) */}
-          <div className="w-[55%] md:w-[50%] text-left pt-6 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0">
+          <div className="w-[55%] md:w-[50%] text-left pt-3 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0">
             <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-white mb-1 md:mb-3 leading-tight">
               Découvrez les mets <br className="md:hidden" />
               <span className="whitespace-nowrap">Africains & Européens</span> <br className="md:hidden" />
