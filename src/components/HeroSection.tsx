@@ -14,22 +14,20 @@ const HeroSection = () => {
   return (
     <section 
       id="accueil" 
-      className="relative min-h-[calc(100vh-100px)] flex items-center pt-24 md:pt-0 overflow-hidden"
+      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-10 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
       style={{
         background: 'linear-gradient(to right, #860207, #f60615)'
       }}
     >
-      <div className="container mx-auto px-4 md:px-8 z-10 w-full">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12 w-full">
+      <div className="container mx-auto px-1 md:px-8 z-10 w-full">
+        <div className="flex flex-row items-center justify-between gap-[8px] md:gap-12 w-full">
           
           {/* Decorative Leaf */}
           <img 
             src={fleurVert} 
             alt="Fleur verte décorative" 
-            className="absolute hidden lg:block pointer-events-none"
+            className="absolute pointer-events-none w-[80px] h-[80px] md:w-[240px] md:h-[240px]"
             style={{
-              width: '240px',
-              height: '240px',
               top: 'calc(55% + 25px)',
               left: 'calc(50% + 50px)',
               transform: 'translate(-50%, -50%)',
@@ -42,40 +40,37 @@ const HeroSection = () => {
           <img 
             src={oignonImg} 
             alt="Oignon décoratif" 
-            className="absolute hidden lg:block pointer-events-none"
+            className="absolute pointer-events-none w-[80px] h-[80px] md:w-[180px] md:h-[180px] blur-[1px] md:blur-[3px] brightness(1.1)"
             style={{
-              width: '180px',
-              height: '180px',
               top: '50%',
               right: '50px',
               transform: 'translateY(-50%)',
               mixBlendMode: 'multiply',
-              filter: 'blur(3px) brightness(1.1)',
               zIndex: 5
             }}
           />
           
           {/* Colonne gauche (50% sur desktop) */}
-          <div className="w-full md:w-[50%] text-center md:text-left pt-20 pb-12 md:pt-32 md:pb-24 flex flex-col justify-start">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight">
+          <div className="w-[55%] md:w-[50%] text-left pt-10 pb-6 md:pt-32 md:pb-24 flex flex-col justify-start">
+            <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-white mb-1 md:mb-3 leading-tight">
               Découvrez les mets <span className="text-white">Africains & Européens</span> de chez Hoovi Bouffe
             </h1>
-            <p className="font-body text-lg md:text-xl text-white/85 mb-4 max-w-2xl mx-auto md:mx-0">
+            <p className="font-body text-[11px] md:text-xl text-white/85 mb-2 md:mb-4 max-w-2xl mx-0">
               Chez Hoovi Boof c'est le meilleur goût!
             </p>
             
-            <div className="flex flex-row items-center gap-[24px] justify-center md:justify-start">
-              <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-row items-center gap-[8px] md:gap-[24px] justify-start mt-[8px] md:mt-0">
+              <div className="flex flex-row gap-2 md:gap-4">
                 <a 
                   href="#menu" 
-                  className="text-white px-8 py-3.5 rounded-lg font-bold text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
+                  className="text-white px-[12px] py-[8px] md:px-8 md:py-3.5 rounded-lg font-bold text-[11px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
                   style={{ backgroundColor: '#249824' }}
                 >
                    Voir nos menus
                 </a>
                 <a 
                   href="#contact" 
-                  className="text-white px-8 py-3.5 rounded-lg font-bold text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
+                  className="text-white px-[12px] py-[8px] md:px-8 md:py-3.5 rounded-lg font-bold text-[11px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
                   style={{ backgroundColor: '#249824' }}
                 >
                   Service traiteur
@@ -84,27 +79,17 @@ const HeroSection = () => {
               <img 
                 src={p1Img} 
                 alt="Poulet rôti" 
-                className="hidden sm:block w-[150px] h-[150px] object-contain"
+                className="block w-[70px] h-[70px] md:w-[150px] md:h-[150px] object-contain"
                 style={{ mixBlendMode: 'multiply' }}
               />
             </div>
 
             {/* Row of 5 circles */}
-            <div className="flex flex-row justify-center md:justify-start gap-[12px] mt-[16px] flex-wrap">
+            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-[10px] md:mt-[16px] flex-wrap">
               {dishAssets.map((asset, index) => (
                 <div 
                   key={index}
-                  style={{
-                    width: '100px',
-                    height: '100px',
-                    borderRadius: '50%',
-                    boxShadow: '0 0 0 4px #249824, 0 0 0 8px #ffffff',
-                    overflow: 'hidden',
-                    display: 'inline-block',
-                    flexShrink: 0,
-                    margin: '6px'
-                  }}
-                  className="hover:scale-110 transition-transform duration-300"
+                  className="w-[52px] h-[52px] md:w-[100px] md:h-[100px] hover:scale-110 transition-transform duration-300 rounded-full overflow-hidden flex-shrink-0 m-[3px] md:m-[6px] ring-[2px] ring-[#249824] ring-offset-[2px] ring-offset-white md:ring-[4px] md:ring-offset-[4px]"
                 >
                   <img 
                     src={asset} 
@@ -117,7 +102,7 @@ const HeroSection = () => {
           </div>
 
           {/* Colonne droite (Image Cheffe) */}
-          <div className="w-full md:w-[50%] flex justify-center md:justify-end items-end relative h-[450px] md:h-[650px] min-h-[450px]">
+          <div className="w-[45%] md:w-[50%] flex justify-end items-end relative h-[300px] md:h-[650px]">
              <img 
                src={chefImg} 
                alt="La Cheffe Hoovi" 
