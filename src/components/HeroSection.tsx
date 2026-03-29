@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section 
       id="accueil" 
-      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-3 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
+      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-24 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
       style={{
         background: 'linear-gradient(to right, #860207, #f60615)'
       }}
@@ -104,7 +104,7 @@ const HeroSection = () => {
           </div>
 
           {/* Colonne droite (Image Cheffe) */}
-          <div className="w-[45%] md:w-[50%] flex justify-end items-start md:items-end relative h-[300px] md:h-[650px] pt-2 md:pt-0">
+          <div className="w-[45%] md:w-[50%] flex justify-end items-start md:items-end relative h-[350px] md:h-[650px] pt-0">
              <img 
                 src={chefImg} 
                 alt="La Cheffe Hoovi" 
