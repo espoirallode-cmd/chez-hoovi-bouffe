@@ -57,7 +57,7 @@ const HeroSection = () => {
               <span className="whitespace-nowrap">Africains & Européens</span> <br className="md:hidden" />
               <span className="whitespace-nowrap">de chez Hoovi Bouffe</span>
             </h1>
-            <p className="font-body text-[11px] md:text-xl text-white/85 mb-[6px] md:mb-4 max-w-2xl mx-0">
+            <p className="font-body text-[11px] md:text-xl text-white/85 mb-[6px] md:mb-4 max-w-2xl mx-0 whitespace-nowrap">
               Chez Hoovi Boof c'est le meilleur goût!
             </p>
             
