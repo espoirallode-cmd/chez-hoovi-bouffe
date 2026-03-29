@@ -70,13 +70,17 @@ const OrderModal: React.FC<OrderModalProps> = ({ isOpen, onClose, dish }) => {
     const deliveryStatus = formData.delivery ? `📍 ${formData.location}` : "🥡 À emporter";
     const accompaniments = formData.selectedAccompagnements.join(" + ");
     
-    const message = `🍽️ *Nouvelle commande — Chez Hoovi Bouffe*
+    let message = `🍽️ *Nouvelle commande — Chez Hoovi Bouffe*
 ──────────────────────
 👤 Client : ${formData.name}
 📱 WhatsApp : ${formData.phone}
-🍴 Plat : ${dish.name.split("+")[0].trim()}
-🥗 Accompagnement : ${accompaniments || "N/A"}
-💰 Prix : ${formData.price.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} FCFA
+🍴 Plat : ${dish.name.split("+")[0].trim()}\n`;
+
+    if (accompaniments) {
+      message += `🥗 Accompagnement : ${accompaniments}\n`;
+    }
+
+    message += `💰 Prix : ${formData.price.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} FCFA
 📦 Livraison : ${deliveryStatus}
 ──────────────────────
 ⏳ En attente de confirmation
