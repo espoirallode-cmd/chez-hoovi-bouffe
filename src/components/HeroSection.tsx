@@ -60,7 +60,7 @@ const HeroSection = () => {
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight">
               Découvrez les mets <span className="text-white">Africains & Européens</span> de chez Hoovi Bouffe
             </h1>
-            <p className="font-body text-lg md:text-xl text-white/85 mb-8 max-w-2xl mx-auto md:mx-0">
+            <p className="font-body text-lg md:text-xl text-white/85 mb-4 max-w-2xl mx-auto md:mx-0">
               Chez Hoovi Boof c'est le meilleur goût!
             </p>
             
@@ -90,7 +90,7 @@ const HeroSection = () => {
             </div>
 
             {/* Row of 5 circles */}
-            <div className="flex flex-row justify-center md:justify-start gap-[12px] mt-[40px] flex-wrap">
+            <div className="flex flex-row justify-center md:justify-start gap-[12px] mt-[16px] flex-wrap">
               {dishAssets.map((asset, index) => (
                 <div 
                   key={index}
