@@ -100,7 +100,7 @@ ${formData.message}
 
             <button 
               type="submit" 
-              className="w-full text-white py-3.5 px-6 rounded-lg font-bold text-lg hover:opacity-95 transition-all shadow-lg shadow-red-500/20 whitespace-nowrap" 
+              className="w-full text-white py-3.5 px-6 rounded-lg font-bold text-[13px] md:text-lg hover:opacity-95 transition-all shadow-lg shadow-red-500/20 whitespace-nowrap" 
               style={{ backgroundColor: '#f60615' }}
             >
               Demander un devis de service traiteur
