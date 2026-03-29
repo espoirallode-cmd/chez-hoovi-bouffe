@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+// Final site version with updated contact info and localization
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
