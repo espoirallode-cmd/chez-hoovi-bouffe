@@ -26,10 +26,10 @@ const HeroSection = () => {
           <img 
             src={fleurVert} 
             alt="Fleur verte décorative" 
-            className="absolute pointer-events-none w-[60px] h-[60px] md:w-[240px] md:h-[240px] top-[72%] left-[52%] md:top-[calc(55%+25px)] md:left-[calc(50%+50px)] transform -translate-x-1/2 -translate-y-1/2"
+            className="absolute pointer-events-none w-[60px] h-[60px] md:w-[240px] md:h-[240px] top-[72%] md:top-[calc(55%+25px)] left-[52%] md:left-[calc(50%+50px)] transform -translate-x-1/2 -translate-y-1/2"
             style={{
               mixBlendMode: 'multiply',
-              zIndex: 5
+              zIndex: 50
             }}
           />
 
