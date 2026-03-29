@@ -53,7 +53,9 @@ const HeroSection = () => {
           {/* Colonne gauche (50% sur desktop) */}
           <div className="w-[55%] md:w-[50%] text-left pt-6 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0">
             <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-white mb-1 md:mb-3 leading-tight">
-              Découvrez les mets <span className="text-white">Africains & Européens</span> de chez Hoovi Bouffe
+              Découvrez les mets <br className="md:hidden" />
+              <span className="whitespace-nowrap">Africains & Européens</span> <br className="md:hidden" />
+              <span className="whitespace-nowrap">de chez Hoovi Bouffe</span>
             </h1>
             <p className="font-body text-[11px] md:text-xl text-white/85 mb-[6px] md:mb-4 max-w-2xl mx-0">
               Chez Hoovi Boof c'est le meilleur goût!
