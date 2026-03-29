@@ -108,24 +108,24 @@ ${formData.message}
           </form>
 
           <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <a href="tel:+2290197900821" className="flex items-start gap-4 group hover:opacity-80 transition-opacity">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                 <i className="fas fa-phone text-primary" />
               </div>
               <div>
                 <h4 className="font-body font-semibold">Téléphone</h4>
                 <p className="text-muted-foreground">+229 01 97 90 08 21</p>
               </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            </a>
+            <a href="mailto:contact@hoovibouffe.fr" className="flex items-start gap-4 group hover:opacity-80 transition-opacity">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                 <i className="fas fa-envelope text-primary" />
               </div>
               <div>
                 <h4 className="font-body font-semibold">Email</h4>
                 <p className="text-muted-foreground">contact@hoovibouffe.fr</p>
               </div>
-            </div>
+            </a>
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                 <i className="fas fa-map-marker-alt text-primary" />
