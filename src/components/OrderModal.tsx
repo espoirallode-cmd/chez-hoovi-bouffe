@@ -301,7 +301,7 @@ const OrderModal: React.FC<OrderModalProps> = ({ isOpen, onClose, dish }) => {
             <div className="space-y-3 pt-4">
               <button 
                 onClick={sendWhatsApp}
-                className="w-full py-4 bg-[#249824] text-white rounded-xl font-bold hover:bg-[#1c7a1c] transition-all flex items-center justify-center gap-3 shadow-lg shadow-green-200"
+                className="w-full py-4 bg-[#249824] text-white rounded-xl font-bold hover:bg-[#1c7a1c] transition-all flex items-center justify-center shadow-lg shadow-green-200"
               >
                 Envoyer ma commande sur WhatsApp
               </button>
