@@ -51,7 +51,7 @@ const HeroSection = () => {
           />
           
           {/* Colonne gauche (50% sur desktop) */}
-          <div className="w-[55%] md:w-[50%] text-left pt-0 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0">
+          <div className="w-[50%] md:w-[50%] text-left pt-0 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0">
             <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-white mb-1 md:mb-3 leading-tight">
               Découvrez les mets <br className="md:hidden" />
               <span className="whitespace-nowrap">Africains & Européens</span> <br className="md:hidden" />
@@ -104,11 +104,11 @@ const HeroSection = () => {
           </div>
 
           {/* Colonne droite (Image Cheffe) */}
-          <div className="w-[45%] md:w-[50%] flex justify-end items-start md:items-end relative h-[350px] md:h-[650px] pt-0">
+          <div className="w-[50%] md:w-[50%] flex justify-end items-start md:items-end relative h-[350px] md:h-[650px] pt-0">
              <img 
                 src={chefImg} 
                 alt="La Cheffe Hoovi" 
-                className="w-full md:w-[110%] h-auto max-h-full object-contain object-top md:object-bottom align-top md:align-bottom transform origin-top md:origin-bottom scale-[1.1] relative top-0 md:top-auto bottom-0 md:bottom-[-75px]"
+                className="w-full md:w-[110%] h-auto max-h-full object-contain object-top md:object-bottom align-top md:align-bottom transform origin-top md:origin-bottom scale-[1.2] md:scale-[1.1] relative top-0 md:top-auto bottom-0 md:bottom-[-75px] left-3 md:left-0"
                 loading="eager"
                 decoding="async"
                 style={{
