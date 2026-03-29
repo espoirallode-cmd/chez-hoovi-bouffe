@@ -20,7 +20,7 @@ const HeroSection = () => {
       }}
     >
       <div className="container mx-auto px-1 md:px-8 z-10 w-full">
-        <div className="flex flex-row items-center justify-between gap-[8px] md:gap-12 w-full">
+        <div className="flex flex-row items-start md:items-center justify-between gap-[8px] md:gap-12 w-full">
           
           {/* Decorative Leaf */}
           <img 
