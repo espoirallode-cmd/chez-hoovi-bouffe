@@ -61,7 +61,7 @@ const HeroSection = () => {
               Chez Hoovi Boof c'est le meilleur goût!
             </p>
             
-            <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-0 flex-nowrap">
+            <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-[-4px] md:mt-0 flex-nowrap">
               <div className="flex flex-row gap-[6px] md:gap-4 flex-nowrap">
                 <a 
                   href="#menu" 
