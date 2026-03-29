@@ -87,7 +87,7 @@ const HeroSection = () => {
             </div>
 
             {/* Row of 3 circles (mobile) / 5 circles (desktop) */}
-            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-1 md:mt-[16px] flex-nowrap hero-circles">
+            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-0 md:mt-[16px] flex-nowrap hero-circles">
               {dishAssets.map((asset, index) => (
                 <div 
                   key={index}
