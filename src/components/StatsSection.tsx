@@ -42,7 +42,7 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <section ref={ref} className="bg-white py-16 border-y border-border relative z-20 -mt-[160px] md:-mt-[60px]">
+    <section ref={ref} className="bg-white py-16 border-y border-border relative z-20 -mt-[220px] md:-mt-[60px]">
       <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {stats.map((s) => (
           <div key={s.label}>

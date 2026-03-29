@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section 
       id="accueil" 
-      className="relative min-h-[400px] md:min-h-[calc(100vh-100px)] flex items-center pt-24 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
+      className="relative min-h-[450px] md:min-h-[calc(100vh-100px)] flex items-center pt-24 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
       style={{
         background: 'linear-gradient(to right, #860207, #f60615)'
       }}
