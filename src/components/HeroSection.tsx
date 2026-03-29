@@ -4,6 +4,9 @@ import dish2 from "@/assets/dish2.jpg";
 import dish3 from "@/assets/dish3.jpg";
 import dish4 from "@/assets/dish4.jpg";
 import dish5 from "@/assets/dish5.jpg";
+import fleurVert from "@/assets/FLEUR_VERT.png";
+import oignonImg from "@/assets/Oignon.png";
+import p1Img from "@/assets/P1.png";
 
 const dishAssets = [dish1, dish2, dish3, dish4, dish5];
 
@@ -21,7 +24,7 @@ const HeroSection = () => {
           
           {/* Decorative Leaf */}
           <img 
-            src="/src/assets/FLEUR_VERT.png" 
+            src={fleurVert} 
             alt="Fleur verte décorative" 
             className="absolute hidden lg:block pointer-events-none"
             style={{
@@ -37,7 +40,7 @@ const HeroSection = () => {
 
           {/* Decorative Onion */}
           <img 
-            src="/src/assets/Oignon.png" 
+            src={oignonImg} 
             alt="Oignon décoratif" 
             className="absolute hidden lg:block pointer-events-none"
             style={{
@@ -79,7 +82,7 @@ const HeroSection = () => {
                 </a>
               </div>
               <img 
-                src="/src/assets/P1.png" 
+                src={p1Img} 
                 alt="Poulet rôti" 
                 className="hidden sm:block w-[150px] h-[150px] object-contain"
                 style={{ mixBlendMode: 'multiply' }}
@@ -114,11 +117,11 @@ const HeroSection = () => {
           </div>
 
           {/* Colonne droite (Image Cheffe) */}
-          <div className="w-full md:w-[50%] flex justify-center md:justify-end items-end relative h-[450px] md:h-screen min-h-[450px]">
+          <div className="w-full md:w-[50%] flex justify-center md:justify-end items-end relative h-[450px] md:h-[650px] min-h-[450px]">
              <img 
                src={chefImg} 
                alt="La Cheffe Hoovi" 
-               className="w-full md:w-[110%] h-full object-contain object-bottom align-bottom transform origin-bottom scale-[1.15]"
+               className="w-full md:w-[110%] h-auto max-h-full object-contain object-bottom align-bottom transform origin-bottom scale-[1.1]"
                loading="eager"
                style={{
                  mixBlendMode: 'multiply',
