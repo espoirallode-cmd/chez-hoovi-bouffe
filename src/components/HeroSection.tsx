@@ -47,7 +47,7 @@ const HeroSection = () => {
               width: '180px',
               height: '180px',
               top: '50%',
-              right: '120px',
+              right: '85px',
               transform: 'translateY(-50%)',
               mixBlendMode: 'multiply',
               filter: 'blur(3px) brightness(1.1)',
