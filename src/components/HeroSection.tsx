@@ -22,17 +22,6 @@ const HeroSection = () => {
       <div className="container mx-auto px-1 md:px-8 z-10 w-full">
         <div className="flex flex-row items-start md:items-center justify-between gap-[8px] md:gap-12 w-full">
           
-          {/* Decorative Leaf */}
-          <img 
-            src={fleurVert} 
-            alt="Fleur verte décorative" 
-            className="absolute pointer-events-none w-[60px] h-[60px] md:w-[240px] md:h-[240px] top-[72%] md:top-[calc(55%+25px)] left-[52%] md:left-[calc(50%+50px)] transform -translate-x-1/2 -translate-y-1/2"
-            style={{
-              mixBlendMode: 'multiply',
-              zIndex: 50
-            }}
-          />
-
           {/* Decorative Onion */}
           <img 
             src={oignonImg} 
@@ -47,7 +36,7 @@ const HeroSection = () => {
             }}
           />
           
-          {/* Colonne gauche (50% sur desktop) */}
+          {/* Colonne gauche (55% sur mobile) */}
           <div className="w-[55%] md:w-[50%] text-left pt-0 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0 -mt-2 md:mt-0">
             <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-white mb-0 md:mb-3 leading-tight">
               Découvrez les mets <br className="md:hidden" />
@@ -111,18 +100,29 @@ const HeroSection = () => {
                 style={{
                   mixBlendMode: 'multiply',
                   alignSelf: 'flex-start',
-                  marginTop: 0,
-                  paddingTop: 0,
-                  marginBottom: -2,
-                  paddingBottom: 0,
                 }}
              />
           </div>
         </div>
       </div>
+
+      {/* Abstract Rings Background */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full h-[600px] pointer-events-none opacity-40 z-0">
+        <div className="absolute top-1/4 right-0 w-[400px] h-[400px] border-[50px] border-white/20 rounded-full blur-xl transition-all" />
+        <div className="absolute bottom-1/4 -right-1/4 w-[500px] h-[500px] border-[30px] border-white/10 rounded-full blur-lg" />
+      </div>
+
+      {/* Decorative Leaf - Repositioned at bottom for priority */}
+      <img 
+        src={fleurVert} 
+        alt="Fleur verte décorative" 
+        className="absolute pointer-events-none w-[60px] h-[60px] md:w-[240px] md:h-[240px] top-[72%] md:top-[calc(55%+25px)] left-[52%] md:left-[calc(50%+50px)] transform -translate-x-1/2 -translate-y-1/2"
+        style={{
+          zIndex: 40
+        }}
+      />
     </section>
   );
 };
 
 export default HeroSection;
-
