@@ -51,26 +51,26 @@ const HeroSection = () => {
           />
           
           {/* Colonne gauche (50% sur desktop) */}
-          <div className="w-[55%] md:w-[50%] text-left pt-10 pb-6 md:pt-32 md:pb-24 flex flex-col justify-start">
+          <div className="w-[55%] md:w-[50%] text-left pt-6 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0">
             <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-white mb-1 md:mb-3 leading-tight">
               Découvrez les mets <span className="text-white">Africains & Européens</span> de chez Hoovi Bouffe
             </h1>
-            <p className="font-body text-[11px] md:text-xl text-white/85 mb-2 md:mb-4 max-w-2xl mx-0">
+            <p className="font-body text-[11px] md:text-xl text-white/85 mb-[6px] md:mb-4 max-w-2xl mx-0">
               Chez Hoovi Boof c'est le meilleur goût!
             </p>
             
-            <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-[8px] md:mt-0">
-              <div className="flex flex-row gap-2 md:gap-4">
+            <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-0 flex-nowrap">
+              <div className="flex flex-row gap-[6px] md:gap-4 flex-nowrap">
                 <a 
                   href="#menu" 
-                  className="text-white px-[10px] py-[6px] md:px-8 md:py-3.5 rounded-lg font-bold text-[10px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
+                  className="text-white px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
                   style={{ backgroundColor: '#249824' }}
                 >
                    Voir nos menus
                 </a>
                 <a 
                   href="#contact" 
-                  className="text-white px-[10px] py-[6px] md:px-8 md:py-3.5 rounded-lg font-bold text-[10px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
+                  className="text-white px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-black/20"
                   style={{ backgroundColor: '#249824' }}
                 >
                   Service traiteur
@@ -79,17 +79,17 @@ const HeroSection = () => {
               <img 
                 src={p1Img} 
                 alt="Poulet rôti" 
-                className="block w-[60px] h-[60px] md:w-[150px] md:h-[150px] object-contain"
+                className="block w-[45px] h-[45px] md:w-[150px] md:h-[150px] object-contain"
                 style={{ mixBlendMode: 'multiply' }}
               />
             </div>
 
             {/* Row of 3 circles (mobile) / 5 circles (desktop) */}
-            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-[10px] md:mt-[16px] flex-wrap hero-circles">
+            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-[6px] md:mt-[16px] flex-nowrap hero-circles">
               {dishAssets.map((asset, index) => (
                 <div 
                   key={index}
-                  className={`w-[70px] h-[70px] md:w-[100px] md:h-[100px] hover:scale-110 transition-transform duration-300 rounded-full overflow-hidden flex-shrink-0 m-[3px] md:m-[6px] ring-[2px] ring-[#249824] ring-offset-[2px] ring-offset-white md:ring-[4px] md:ring-offset-[4px] ${index >= 3 ? "hidden md:block" : ""}`}
+                  className={`w-[60px] h-[60px] md:w-[100px] md:h-[100px] hover:scale-110 transition-transform duration-300 rounded-full overflow-hidden flex-shrink-0 m-[3px] md:m-[6px] ring-[2px] ring-[#249824] ring-offset-[2px] ring-offset-white md:ring-[4px] md:ring-offset-[4px] ${index >= 3 ? "hidden md:block" : ""}`}
                 >
                   <img 
                     src={asset} 
@@ -102,7 +102,7 @@ const HeroSection = () => {
           </div>
 
           {/* Colonne droite (Image Cheffe) */}
-          <div className="w-[45%] md:w-[50%] flex justify-end items-start md:items-end relative h-[300px] md:h-[650px] pt-4 md:pt-0">
+          <div className="w-[45%] md:w-[50%] flex justify-end items-start md:items-end relative h-[300px] md:h-[650px] pt-2 md:pt-0">
              <img 
                 src={chefImg} 
                 alt="La Cheffe Hoovi" 
@@ -113,6 +113,7 @@ const HeroSection = () => {
                   mixBlendMode: 'multiply',
                   alignSelf: 'flex-start',
                   marginTop: 0,
+                  paddingTop: 0,
                   marginBottom: -2,
                   paddingBottom: 0,
                 }}
