@@ -52,7 +52,7 @@ ${formData.message}
         <h2 className="font-body font-bold text-3xl md:text-4xl text-center mb-2">
           Réservation & <span className="text-accent">Contact</span>
         </h2>
-        <p className="text-center text-muted-foreground mb-10">Réservez votre table ou contactez-nous</p>
+        <p className="text-center text-muted-foreground mb-10">Demander un devis de service traiteur ou contactez-nous</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-4">
