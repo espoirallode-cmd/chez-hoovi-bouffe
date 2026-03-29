@@ -26,7 +26,8 @@ const HeroSection = () => {
           <img 
             src={fleurVert} 
             alt="Fleur verte décorative" 
-            className="absolute hidden lg:block pointer-events-none"
+            decoding="async"
+            loading="lazy"
             style={{
               width: '240px',
               height: '240px',
@@ -42,7 +43,8 @@ const HeroSection = () => {
           <img 
             src={oignonImg} 
             alt="Oignon décoratif" 
-            className="absolute hidden lg:block pointer-events-none"
+            decoding="async"
+            loading="lazy"
             style={{
               width: '180px',
               height: '180px',
@@ -85,6 +87,8 @@ const HeroSection = () => {
                 src={p1Img} 
                 alt="Poulet rôti" 
                 className="hidden sm:block w-[150px] h-[150px] object-contain"
+                decoding="async"
+                loading="lazy"
                 style={{ mixBlendMode: 'multiply' }}
               />
             </div>
@@ -110,6 +114,8 @@ const HeroSection = () => {
                     src={asset} 
                     alt={`Plat ${index + 1}`}
                     className="w-full h-full object-cover"
+                    decoding="async"
+                    loading="lazy"
                   />
                 </div>
               ))}
@@ -123,6 +129,7 @@ const HeroSection = () => {
                alt="La Cheffe Hoovi" 
                className="w-full md:w-[110%] h-auto max-h-full object-contain object-bottom align-bottom transform origin-bottom scale-[1.1]"
                loading="eager"
+               decoding="async"
                style={{
                  mixBlendMode: 'multiply',
                  alignSelf: 'flex-end',

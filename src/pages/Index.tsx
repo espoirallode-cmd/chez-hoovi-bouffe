@@ -2,8 +2,8 @@ import { lazy, Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
-import MenuSection from "@/components/MenuSection";
 
+const MenuSection = lazy(() => import("@/components/MenuSection"));
 const GallerySection = lazy(() => import("@/components/GallerySection"));
 const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
 const FAQSection = lazy(() => import("@/components/FAQSection"));
@@ -24,7 +24,9 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <StatsSection />
-      <MenuSection />
+      <Suspense fallback={<SectionLoader />}>
+        <MenuSection />
+      </Suspense>
       
       <Suspense fallback={<SectionLoader />}>
         <GallerySection />
