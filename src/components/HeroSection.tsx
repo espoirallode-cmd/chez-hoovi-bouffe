@@ -48,14 +48,14 @@ const HeroSection = () => {
               <div className="flex flex-row gap-[6px] md:gap-4 flex-nowrap">
                 <a 
                   href="#menu" 
-                  className="text-white px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap shadow-lg shadow-red-900/20"
+                  className="text-white px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap"
                   style={{ backgroundColor: '#f60615' }}
                 >
                    Voir nos menus
                 </a>
                 <a 
                   href="#contact" 
-                  className="bg-white text-[#f60615] border-2 border-[#f60615] px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:bg-[#f60615] hover:text-white transition-all whitespace-nowrap shadow-lg shadow-black/20"
+                  className="bg-white text-[#f60615] border-2 border-[#f60615] px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:bg-[#f60615] hover:text-white transition-all whitespace-nowrap"
                 >
                   Service traiteur
                 </a>
