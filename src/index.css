@@ -108,16 +108,8 @@
 
   .hero-dot-pattern {
     background-color: #000000;
-    background-image: radial-gradient(#f1f5f9 1px, transparent 1px);
-    background-size: 14px 14px;
-    background-position: 0 -10px;
-  }
-
-  @media (min-width: 768px) {
-    .hero-dot-pattern {
-      background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-      background-size: 24px 24px;
-      background-position: 0 0;
-    }
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
   }
 }
