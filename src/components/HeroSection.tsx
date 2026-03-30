@@ -120,7 +120,7 @@ const HeroSection = () => {
       <img 
         src={fleurVert} 
         alt="Fleur verte décorative" 
-        className="absolute md:hidden pointer-events-none w-[60px] h-[60px] top-[20%] left-[66%] transform -translate-x-1/2 -translate-y-1/2"
+        className="absolute md:hidden pointer-events-none w-[60px] h-[60px] top-[22%] left-[66%] transform -translate-x-1/2 -translate-y-1/2"
         style={{
           zIndex: 40
         }}
