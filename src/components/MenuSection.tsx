@@ -107,7 +107,7 @@ const MenuSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((d, i) => (
             <div key={d.name} className="animate-in-view menu-card-hover bg-card rounded-xl overflow-hidden shadow-md" style={{ transitionDelay: `${i * 0.05}s` }}>
-              <div className="overflow-hidden h-52">
+              <div className="overflow-hidden h-72 md:h-80">
                 <img src={d.img} alt={d.name} className="menu-img w-full h-full object-cover" loading="lazy" width={640} height={512} />
               </div>
               <div className="p-5">
