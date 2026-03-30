@@ -52,7 +52,8 @@ const HeroSection = () => {
                 </a>
                 <a 
                   href="#contact" 
-                  className="bg-white text-[#f60615] border-2 border-[#f60615] px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:bg-[#f60615] hover:text-white transition-all whitespace-nowrap"
+                  className="text-white px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap border-2 border-transparent"
+                  style={{ backgroundColor: '#f60615' }}
                 >
                   Service traiteur
                 </a>
