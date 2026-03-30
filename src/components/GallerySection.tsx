@@ -27,7 +27,7 @@ const GallerySection = () => {
         <p className="text-center text-muted-foreground mb-10">Un aperçu de notre univers</p>
 
         <div className="relative max-w-4xl mx-auto rounded-xl overflow-hidden">
-          <div className="aspect-video relative">
+          <div className="relative h-[450px] md:h-[650px]">
             {images.map((img, i) => (
               <img
                 key={i}
