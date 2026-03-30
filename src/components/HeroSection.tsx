@@ -32,12 +32,12 @@ const HeroSection = () => {
           
           {/* Colonne gauche (55% sur mobile) */}
           <div className="w-[55%] md:w-[50%] text-left pt-0 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0 -mt-5 md:mt-0">
-            <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-[#1a1a1a] mb-0 md:mb-3 leading-tight">
+            <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-white mb-0 md:mb-3 leading-tight">
               Découvrez les mets <br className="md:hidden" />
               <span className="whitespace-nowrap">Africains & Européens</span> <br className="md:hidden" />
               <span className="text-[#f60615] whitespace-nowrap">de chez Hoovi Bouffe</span>
             </h1>
-            <p className="font-body text-[11px] md:text-xl text-[#4a4a4a] mb-0 md:mb-4 max-w-2xl mx-0 whitespace-nowrap">
+            <p className="font-body text-[11px] md:text-xl text-white mb-0 md:mb-4 max-w-2xl mx-0 whitespace-nowrap">
               Chez Hoovi Bouffe c'est le meilleur goût!
             </p>
             

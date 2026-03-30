@@ -107,7 +107,7 @@
   }
 
   .hero-dot-pattern {
-    background-color: #ffffff;
+    background-color: #000000;
     background-image: radial-gradient(#f1f5f9 1px, transparent 1px);
     background-size: 14px 14px;
     background-position: 0 -10px;
