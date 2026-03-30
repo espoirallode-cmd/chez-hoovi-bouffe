@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-shadow duration-300 ${scrolled ? "shadow-md py-2" : "py-4"}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 transition-shadow duration-300 ${scrolled ? "shadow-md py-2" : "py-4"}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#accueil" className="font-display font-bold text-primary text-xl md:text-2xl flex items-center gap-2">
           Chez Hoovi Bouffe
