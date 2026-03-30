@@ -48,7 +48,7 @@ const HeroSection = () => {
               <div className="flex flex-row gap-[6px] md:gap-4 flex-nowrap">
                 <a 
                   href="#menu" 
-                  className="text-white px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap"
+                  className="text-white px-[8px] py-[5px] md:px-8 md:py-3.5 rounded-[6px] md:rounded-lg font-bold text-[9px] md:text-lg hover:opacity-90 transition-opacity whitespace-nowrap border-2 border-transparent"
                   style={{ backgroundColor: '#f60615' }}
                 >
                    Voir nos menus
