@@ -16,7 +16,9 @@ const HeroSection = () => {
       id="accueil" 
       className="relative min-h-[450px] md:min-h-[calc(100vh-100px)] flex items-center pt-24 md:pt-0 overflow-hidden px-[12px] py-[10px] md:px-0 md:py-0"
       style={{
-        background: '#ffffff'
+        backgroundColor: '#ffffff',
+        backgroundImage: 'radial-gradient(#e5e7eb 1px, transparent 1px)',
+        backgroundSize: '24px 24px'
       }}
     >
       <div className="container mx-auto px-1 md:px-8 z-10 w-full">
