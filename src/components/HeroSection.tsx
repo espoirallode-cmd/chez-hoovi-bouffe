@@ -34,7 +34,7 @@ const HeroSection = () => {
           />
           
           {/* Colonne gauche (55% sur mobile) */}
-          <div className="w-[55%] md:w-[50%] text-left pt-0 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0 -mt-8 md:mt-0">
+          <div className="w-[55%] md:w-[50%] text-left pt-0 pb-2 md:pt-32 md:pb-24 flex flex-col justify-start px-2 md:px-0 -mt-5 md:mt-0">
             <h1 className="font-display text-[18px] md:text-5xl lg:text-6xl font-bold text-[#1a1a1a] mb-0 md:mb-3 leading-tight">
               Découvrez les mets <br className="md:hidden" />
               <span className="whitespace-nowrap">Africains & Européens</span> <br className="md:hidden" />
@@ -44,7 +44,7 @@ const HeroSection = () => {
               Chez Hoovi Bouffe c'est le meilleur goût!
             </p>
             
-            <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-[-4px] md:mt-0 flex-nowrap">
+            <div className="flex flex-row items-center gap-[6px] md:gap-[24px] justify-start mt-[10px] md:mt-0 flex-nowrap">
               <div className="flex flex-row gap-[6px] md:gap-4 flex-nowrap">
                 <a 
                   href="#menu" 
@@ -69,7 +69,7 @@ const HeroSection = () => {
             </div>
 
             {/* Row of 3 circles (mobile) / 5 circles (desktop) */}
-            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-0 md:mt-[16px] flex-nowrap hero-circles">
+            <div className="flex flex-row justify-start gap-[6px] md:gap-[12px] mt-[10px] md:mt-[16px] flex-nowrap hero-circles">
               {dishAssets.map((asset, index) => (
                 <div 
                   key={index}
@@ -120,7 +120,7 @@ const HeroSection = () => {
       <img 
         src={fleurVert} 
         alt="Fleur verte décorative" 
-        className="absolute md:hidden pointer-events-none w-[60px] h-[60px] top-[18%] left-[62%] transform -translate-x-1/2 -translate-y-1/2"
+        className="absolute md:hidden pointer-events-none w-[60px] h-[60px] top-[20%] left-[62%] transform -translate-x-1/2 -translate-y-1/2"
         style={{
           zIndex: 40
         }}
