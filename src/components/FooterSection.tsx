@@ -43,7 +43,7 @@ const FooterSection = () => {
 
         <div className="border-t border-footer-foreground/10 mt-10 pt-6 text-center">
           <p className="text-footer-foreground/50 text-sm">
-            © 2025 Chez Hoovi Bouffe. Tous droits réservés.
+            © 2026 Chez Hoovi Bouffe. Tous droits réservés.
           </p>
         </div>
       </div>
